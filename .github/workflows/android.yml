@@ -36,7 +36,7 @@ jobs:
           /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager "platforms;android-35" "build-tools;35.0.0"
 
       - name: Extract source
-        run: unzip -o VIDEONEX-ai-json-fix-0.27.6.zip -d .
+        run: unzip -o VIDEONEX-ONE-SOURCE-PACK.zip -d .
 
       - name: Build APK
         run: cd VIDEONEX && gradle --no-daemon assembleDebug
