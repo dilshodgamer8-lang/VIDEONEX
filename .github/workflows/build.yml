@@ -19,7 +19,8 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - uses: android-actions/setup-android@v3
+      - name: Android litsenziyalarini qabul qilish
+        run: yes | sdkmanager --licenses > /dev/null || true
 
       - uses: gradle/actions/setup-gradle@v4
         with:
